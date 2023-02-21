@@ -1,5 +1,5 @@
 import { checkValidationPhone, getToken, sendTokenToSMS} from "./phone.js";
-function createTokenOfPhone(myPhone, count) {
+export function createTokenOfPhone(myPhone, count) {
   const isValid = checkValidationPhone(myPhone);
   if(isValid) {
     const myToken = getToken(6); 
