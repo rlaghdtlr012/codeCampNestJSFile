@@ -25,7 +25,7 @@ app.post('/boards', (req, res) => {
   res.send("게시물 등록에 성공하였습니다!!");
 })
 
-app.post('./token/phone', (req, res) => {
+app.post('/token/phone', (req, res) => {
   const isValid = checkValidationPhone(req.body.phoneNumber);
   if(isValid) {
     const myToken = getToken(6); 

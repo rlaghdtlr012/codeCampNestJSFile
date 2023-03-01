@@ -1,14 +1,17 @@
-//const express = require('express')
 import express from 'express';
+import swaggerUi from 'swagger-ui-express';
+import swaggerJsdoc from 'swagger-jsdoc';
+import { options } from './swagger/config.js'
 const app = express();
 const port = 3000
 
-app.use(express.json());
 
+
+app.use(express.json());
 app.get('/', (req, res) => {
   res.send('Hello World!')
 })
-
+app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerJsdoc(options)));
 app.get('/boards', (req, res) => {
   // 1. 데이터를 조회하는 로직 => DB에 접속해서 데이터 꺼내오기
   const result = [
