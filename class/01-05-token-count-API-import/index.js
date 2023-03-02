@@ -1,4 +1,4 @@
-import { checkValidationPhone, getToken, sendTokenToSMS} from "./phone.js";
+import { checkValidationPhone, getToken, sendTokenToSMS} from "../06-02-rest-api-with-sms/backend/phone.js";
 export function createTokenOfPhone(myPhone, count) {
   const isValid = checkValidationPhone(myPhone);
   if(isValid) {

@@ -1,0 +1,17 @@
+{
+  "dependencies": {
+    "@apollo/server": "^4.4.0",
+    "graphql": "^16.6.0",
+    "nodemon": "^2.0.20"
+  },
+  "name": "05-02-grapghql-api-with-apollo-server",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "type": "module"
+}
